@@ -3,9 +3,10 @@ __pycache__/
 *.pyc
 .pytest_cache/
 .mypy_cache/
+*.db
+*.sqlite3
 urban_climate.db
 openapi.json
 .env
 dist/
 *.log
-

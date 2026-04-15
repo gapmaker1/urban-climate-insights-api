@@ -1,10 +1,11 @@
 import os
+import tempfile
 from pathlib import Path
 
 import pytest
 from fastapi.testclient import TestClient
 
-TEST_DB_PATH = Path(__file__).resolve().parent / "test_urban_climate.db"
+TEST_DB_PATH = Path(tempfile.gettempdir()) / "urban_climate_test.db"
 os.environ["DATABASE_URL"] = f"sqlite:///{TEST_DB_PATH.resolve().as_posix()}"
 
 from app.core.database import Base, SessionLocal, engine, get_db  # noqa: E402
@@ -27,4 +28,3 @@ def client() -> TestClient:
     with TestClient(app) as test_client:
         yield test_client
     app.dependency_overrides.clear()
-
