@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Leeds",
+    "country_code": "GB"
+  },
+  {
+    "name": "London",
+    "country_code": "GB"
+  },
+  {
+    "name": "Manchester",
+    "country_code": "GB"
+  },
+  {
+    "name": "Birmingham",
+    "country_code": "GB"
+  },
+  {
+    "name": "Edinburgh",
+    "country_code": "GB"
+  },
+  {
+    "name": "Bristol",
+    "country_code": "GB"
+  }
+]
+
