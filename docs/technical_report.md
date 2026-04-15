@@ -2,9 +2,11 @@
 
 ## Student Details
 
-Student name: `[Fill Before Submission]`
+Student name: `Yuan Rui`
 
-Student ID: `[Fill Before Submission]`
+Student ID: `2022115981`
+
+GitHub repository: `https://github.com/gapmaker1/urban-climate-insights-api`
 
 Module: Web Services and Web Data
 

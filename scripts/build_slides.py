@@ -8,6 +8,9 @@ from pptx.util import Inches, Pt
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_PATH = ROOT / "presentation" / "Urban_Climate_Insights_API_Presentation.pptx"
+STUDENT_NAME = "Yuan Rui"
+STUDENT_ID = "2022115981"
+GITHUB_URL = "https://github.com/gapmaker1/urban-climate-insights-api"
 
 NAVY = RGBColor(15, 23, 42)
 TEAL = RGBColor(13, 148, 136)
@@ -112,9 +115,9 @@ def build_presentation():
     hero_tf.paragraphs[0].font.bold = True
     hero_tf.paragraphs[0].font.color.rgb = NAVY
     for text, top in [
-        ("Student Name: [Fill Before Submission]", 4.7),
-        ("Student ID: [Fill Before Submission]", 5.15),
-        ("GitHub: [Public Repository URL]", 5.6),
+        (f"Student Name: {STUDENT_NAME}", 4.7),
+        (f"Student ID: {STUDENT_ID}", 5.15),
+        (f"GitHub: {GITHUB_URL}", 5.6),
     ]:
         box = title_slide.shapes.add_textbox(Inches(0.85), Inches(top), Inches(7.5), Inches(0.35))
         p = box.text_frame.paragraphs[0]
@@ -165,6 +168,7 @@ def build_presentation():
         [
             "Swagger UI and exported OpenAPI schema document the live API.",
             "Pytest covers authentication, CRUD, and analytics behaviour.",
+            "Technical report highlights stack choice, testing, limitations, and declared GenAI usage.",
             "Repository includes README, PDF API docs, PDF technical report, Dockerfile, and generated slide deck.",
         ],
         accent=ORANGE,
