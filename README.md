@@ -4,10 +4,10 @@ Urban Climate Insights API is a coursework-ready REST API for the Web Services a
 
 ## Deliverables
 
-- API documentation PDF: `docs/api_documentation.pdf`
-- Technical report PDF: `docs/technical_report.pdf`
-- Presentation slides: `presentation/Urban_Climate_Insights_API_Presentation.pptx`
-- Exported OpenAPI schema: `docs/openapi.json`
+- API documentation PDF: [docs/api_documentation.pdf](docs/api_documentation.pdf)
+- Technical report PDF: [docs/technical_report.pdf](docs/technical_report.pdf)
+- Presentation slides: [presentation/Urban_Climate_Insights_API_Presentation.pptx](presentation/Urban_Climate_Insights_API_Presentation.pptx)
+- Exported OpenAPI schema: [docs/openapi.json](docs/openapi.json)
 
 ## Key Features
 
@@ -111,7 +111,6 @@ tests/          pytest coverage
 
 ## Submission Notes
 
-- Replace the placeholder student name, student ID, and GitHub URL in the slide deck before submission.
+- GitHub repository: [gapmaker1/urban-climate-insights-api](https://github.com/gapmaker1/urban-climate-insights-api)
 - Push this repository to a public GitHub repository with visible commit history.
 - Regenerate the PDF files after any major content change to keep the deliverables aligned with the code.
-
