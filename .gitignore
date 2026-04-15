@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+urban_climate.db
+openapi.json
+.env
+dist/
+*.log
+
