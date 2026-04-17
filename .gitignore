@@ -10,3 +10,4 @@ openapi.json
 .env
 dist/
 *.log
+答辩稿.txt

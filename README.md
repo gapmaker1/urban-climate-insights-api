@@ -16,7 +16,6 @@ Urban Climate Insights API is a coursework-ready REST API for the Web Services a
 - External data import from Open-Meteo historical weather, air-quality, and geocoding services.
 - Analytics endpoints for city summaries, trend series, anomaly detection, and city-to-city comparison.
 - Automated test suite covering authentication, CRUD, and analytics workflows.
-- Delivery material generation scripts for OpenAPI export, PDF documents, and PowerPoint slides.
 
 ## Technology Stack
 
@@ -27,7 +26,6 @@ Urban Climate Insights API is a coursework-ready REST API for the Web Services a
 - JWT bearer tokens for authentication
 - Open-Meteo APIs for geocoding, historical weather, and air-quality data
 - Pytest for automated testing
-- ReportLab and python-pptx for coursework deliverables
 
 ## Quick Start
 
@@ -63,15 +61,6 @@ These credentials are created by `scripts/seed_data.py`.
 .\.venv\Scripts\python -m pytest
 ```
 
-## Exporting Supporting Materials
-
-```powershell
-.\.venv\Scripts\python scripts\export_openapi.py
-.\.venv\Scripts\python scripts\render_markdown_pdf.py docs\api_documentation.md docs\api_documentation.pdf
-.\.venv\Scripts\python scripts\render_markdown_pdf.py docs\technical_report.md docs\technical_report.pdf
-.\.venv\Scripts\python scripts\build_slides.py
-```
-
 ## API Overview
 
 - `POST /api/v1/auth/register`: create a user account.
@@ -96,8 +85,8 @@ app/
   services/     analytics and Open-Meteo integration
 data/           seed city list
 docs/           markdown and PDF supporting materials
-presentation/   generated PowerPoint deck
-scripts/        seed, export, and document generation scripts
+presentation/   PowerPoint deck for the oral presentation
+scripts/        runtime helper scripts such as database seeding
 tests/          pytest coverage
 ```
 
@@ -113,4 +102,3 @@ tests/          pytest coverage
 
 - GitHub repository: [gapmaker1/urban-climate-insights-api](https://github.com/gapmaker1/urban-climate-insights-api)
 - Push this repository to a public GitHub repository with visible commit history.
-- Regenerate the PDF files after any major content change to keep the deliverables aligned with the code.
