@@ -8,9 +8,13 @@ Student ID: `2022115981`
 
 GitHub repository: `https://github.com/gapmaker1/urban-climate-insights-api`
 
+API documentation (PDF): `https://github.com/gapmaker1/urban-climate-insights-api/blob/main/docs/api_documentation.pdf`
+
+Presentation slides and visuals: `https://github.com/gapmaker1/urban-climate-insights-api/blob/main/presentation/Urban_Climate_Insights_API_Presentation.pptx`
+
 Module: Web Services and Web Data
 
-Submission date: `15 April 2026`
+Submission date: `20 April 2026`
 
 ## Project Summary
 
@@ -251,3 +255,43 @@ Reflecting on this process, AI was most valuable for accelerating prototyping an
 ## Conclusion
 
 Urban Climate Insights API meets the coursework requirements and extends them with external data integration, analytical endpoints, testing, and presentation-ready deliverables. The final system is not only a working CRUD API, but also a small analytical platform that can be explained clearly in an oral exam and expanded further in future work.
+
+## Appendix A: Selected Generative AI Conversation Logs
+
+This appendix records representative GenAI-assisted interactions used during development. The full working conversation was longer, so the entries below focus on the prompts that materially affected design, debugging, submission preparation, and presentation planning.
+
+### Log 1: Project Direction and Scope
+
+- User prompt: "Help me complete a Web Services and Web Data coursework project."
+- AI support: suggested a project direction that would exceed the minimum CRUD brief by combining database-backed API design, external open data, analytics, testing, and coursework deliverables.
+- Outcome used in the project: the final system became the Urban Climate Insights API rather than a minimal single-model CRUD exercise.
+
+### Log 2: Clarifying the Nature of the Project
+
+- User prompt: "I don't really understand what this project is in essence."
+- AI support: reframed the project as a backend data service rather than a traditional website, explaining that the API is the layer that stores, imports, serves, and analyses environmental data.
+- Outcome used in the project: this explanation informed the oral presentation narrative and technical report wording.
+
+### Log 3: Debugging a Package Import Error
+
+- User prompt: "Explain this error with examples" after receiving `ModuleNotFoundError: No module named 'app'`.
+- AI support: explained Python package resolution, why `python app/main.py` failed in that context, and why `uvicorn app.main:app --reload` or module-based execution is the correct startup approach.
+- Outcome used in the project: the project startup guidance was clarified and the runtime path issue was resolved for local demonstration.
+
+### Log 4: Repository and Commit History Preparation
+
+- User prompt: "I don't want to upload only one big commit; tell me in detail how I should upload it."
+- AI support: proposed a logical commit structure, checked Git status, and helped organise the repository into meaningful milestones rather than a single monolithic upload.
+- Outcome used in the project: the public GitHub repository now shows staged development-oriented commits and cleaner submission history.
+
+### Log 5: Oral Presentation and Q&A Preparation
+
+- User prompt: "Write a defence script of around 10 minutes and a list of likely Q&A questions."
+- AI support: drafted English and Chinese speaking notes, highlighted likely examiner questions, and aligned the oral explanation with the implemented stack, analytics, and trade-offs.
+- Outcome used in the project: the presentation deck and viva preparation materials were structured around these talking points.
+
+### Log 6: Final Submission Cleanup
+
+- User prompt: "Help me clean the project and remove unused files, such as image-generation scripts."
+- AI support: identified non-essential generation scripts and temporary image assets, then simplified the repository to keep only runnable code and final submission materials.
+- Outcome used in the project: the final repository is cleaner, easier to review, and more closely aligned with the actual submission requirements.
